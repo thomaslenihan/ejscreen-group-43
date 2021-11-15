@@ -1,6 +1,6 @@
 ---
 title: "Group 43 CA pollution burden"
-author: "Thomas Lenihan"
+author: "Thomas Lenihan and Jessica West"
 date: "11/12/2021"
 output: html_document
 ---
@@ -11,11 +11,15 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 library(here)
-
+library(hexbin)
 ```
 
 ```{r}
 ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
   clean_names()
+```
+```{r}
+ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
+  geom_point(aes(color = ces_3_0_score))
 ```
 
