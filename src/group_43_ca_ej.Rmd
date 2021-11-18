@@ -34,6 +34,6 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
 
 A noticeable relationship between pollution burden score and white residents (%) exists per the provided data, where white residents (on average) show a lower pollution burden score. This means that white residents show lower risk of exposure to potentially toxic environments and subsequent environmental effects of pollution.
 
-## Citations
+## Citation
 
 “California Office of Environmental Health Hazard Assessment (OEHHA).” CalEnviroScreen 3.0, 25 June 2018, https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30.
