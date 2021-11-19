@@ -26,10 +26,11 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex(aes(color = ces_3_0_score)) + 
   scale_fill_gradient(low = "mediumpurple", high = "lightseagreen") +
   theme_minimal() +
-  labs(x = "White Residents (%)",
+  labs(x = "\nWhite Residents (%)",
       y = "Pollution Burden Score", 
-      caption = "Source: California Environmental Justice Alliance 2018")
+      caption = "\nSource: California Environmental Justice Alliance 2018")
 ```
+
 **Figure 1 - Pollution Burden Score of California Census Tracts by Percentage of White Residents.** Each hex bin represents a single California census tract, with the color of the bin representing multiple census tracts with the same values. Pollution burden score combines relevant environmental and social statistics (such as pollution exposures, health problems, socioeconomic data, etc). Data was taken from the Cal EnviroScreen 3.0 project by the California Environmental Justice Alliance. 
 
 A noticeable relationship between pollution burden score and white residents (%) exists per the provided data, where white residents (on average) show a lower pollution burden score. This means that white residents show lower risk of exposure to potentially toxic environments and subsequent environmental effects of pollution.
